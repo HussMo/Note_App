@@ -17,7 +17,7 @@ class NotesView extends StatelessWidget {
             shape: const RoundedRectangleBorder( borderRadius: BorderRadius.vertical(top: Radius.circular(25.0))),
               context: context,
               builder: (context) {
-                return AddBotoomNoteSheet();
+                return const AddBotoomNoteSheet();
               });
         },
         child: const Icon(Icons.add, color: Colors.black),
@@ -26,12 +26,12 @@ class NotesView extends StatelessWidget {
     body: Padding(
       padding:  const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
-        children: [
+        children: const [
 
-          const SizedBox(
+          SizedBox(
             height: 40,
           ),
-          CustomAppBar(),
+          CustomAppBar(title: 'Notes', icon: Icons.search),
           Expanded(child: CustomeNoteListView())
         ]
       ),

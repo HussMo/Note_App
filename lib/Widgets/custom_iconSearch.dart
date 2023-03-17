@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomeIcpnButton extends StatelessWidget {
-  const CustomeIcpnButton({Key? key}) : super(key: key);
+  const CustomeIcpnButton({Key? key, required this.icon}) : super(key: key);
 
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -10,9 +11,9 @@ class CustomeIcpnButton extends StatelessWidget {
       width: 50,
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.05),
-        borderRadius: BorderRadius.all(Radius.circular(10)),
+        borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
-      child: const Icon(Icons.search),
+      child:  Icon(icon),
     );
   }
 }
