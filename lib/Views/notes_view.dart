@@ -17,7 +17,7 @@ class NotesView extends StatelessWidget {
             shape: const RoundedRectangleBorder( borderRadius: BorderRadius.vertical(top: Radius.circular(25.0))),
               context: context,
               builder: (context) {
-                return const AddBotoomNoteSheet();
+                return  AddBotoomNoteSheet();
               });
         },
         child: const Icon(Icons.add, color: Colors.black),
