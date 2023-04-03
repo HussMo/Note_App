@@ -14,7 +14,7 @@ final String hint;
     return TextFormField(
       onSaved: onSaved,
       validator: (value) {
-        if (value!.isEmpty ?? true) {
+        if (value!.isEmpty) {
           return "Please Enter Some Text";
         } else {
           return null;
