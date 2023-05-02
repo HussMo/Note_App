@@ -4,7 +4,7 @@ import 'package:note_app/Widgets/custome_Button.dart';
 import 'package:note_app/Widgets/custome_textt_Field.dart';
 
 class AddBotoomNoteSheet extends StatefulWidget {
-   AddBotoomNoteSheet({Key? key}) : super(key: key);
+   const AddBotoomNoteSheet({Key? key}) : super(key: key);
 
   @override
   State<AddBotoomNoteSheet> createState() => _AddBotoomNoteSheetState();
@@ -13,7 +13,7 @@ class AddBotoomNoteSheet extends StatefulWidget {
 }
 
 class _AddBotoomNoteSheetState extends State<AddBotoomNoteSheet> {
-  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   String? title,subTitle;
 
